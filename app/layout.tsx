@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     "PT. Khodimul Ummah adalah Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) resmi yang melayani pengiriman TKI ke Arab Saudi, Dubai & Qatar. Profesional, amanah, dan berpengalaman.",
   keywords:
     "TKI, pekerja migran, P3MI, Arab Saudi, Dubai, Qatar, tenaga kerja Indonesia, Khodimul Ummah",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/manifest.json",
   openGraph: {
     title: "Khodimul Ummah - Penempatan Pekerja Migran Indonesia",
     description:
