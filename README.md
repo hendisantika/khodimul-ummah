@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Khodimul Ummah - Company Profile
+
+Company profile website for **PT. Khodimul Ummah**, a licensed Indonesian Migrant Worker Placement Company (P3MI) specializing in sending workers to **Saudi Arabia**, **Dubai (UAE)**, and **Qatar**.
+
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?logo=tailwindcss)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000?logo=vercel)
+
+## Live Demo
+
+[https://khodimul-ummah.hendisantika.my.id](https://khodimul-ummah.hendisantika.my.id)
+
+## Features
+
+- **Responsive Design** - Mobile-first approach, works on all screen sizes
+- **Sticky Navbar** - Transparent-to-solid scroll effect with mobile hamburger menu
+- **Hero Section** - Full-screen gradient hero with CTA and destination flags
+- **Company Stats** - Key metrics (5,000+ workers, 3 countries, 10+ years, 98% satisfaction)
+- **About Section** - Company profile with key values
+- **Services** - 6 service cards (Domestic, Construction, Hospitality, Training, Documents, Protection)
+- **Destinations** - Country-specific cards for Saudi Arabia, Dubai & Qatar with salary info
+- **Process Flow** - 6-step placement process from registration to monitoring
+- **Why Choose Us** - 6 key advantages
+- **Testimonials** - Worker success stories with glassmorphism cards
+- **CTA Banner** - Call-to-action with WhatsApp integration
+- **Contact Form** - Form with destination selector + office info & social media links
+- **Footer** - Company info, quick links, destinations & contact details
+- **Vercel Analytics** - Built-in analytics tracking
+- **SEO Optimized** - Metadata, OpenGraph tags, and Indonesian locale
+
+## Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Language**: [TypeScript 5](https://www.typescriptlang.org/)
+- **Runtime**: [Bun](https://bun.sh/)
+- **Analytics**: [@vercel/analytics](https://vercel.com/analytics)
+- **Fonts**: [Geist](https://vercel.com/font) (Sans & Mono)
+- **Deployment**: [Vercel](https://vercel.com/)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- [Bun](https://bun.sh/) (recommended) or Node.js 18+
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+# Clone the repository
+git clone https://github.com/hendisantika/khodimul-ummah.git
+cd khodimul-ummah
+
+# Install dependencies
+bun install
+
+# Start development server
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun run build
+bun start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/
+├── components/
+│   ├── Navbar.tsx          # Sticky navigation with scroll effect
+│   ├── Hero.tsx            # Full-screen hero section
+│   ├── Stats.tsx           # Key company metrics
+│   ├── About.tsx           # Company profile
+│   ├── Services.tsx        # Service offerings
+│   ├── Destinations.tsx    # Saudi, Dubai & Qatar cards
+│   ├── Process.tsx         # 6-step placement flow
+│   ├── WhyChooseUs.tsx     # Key advantages
+│   ├── Testimonials.tsx    # Worker testimonials
+│   ├── CTA.tsx             # Call-to-action banner
+│   ├── Contact.tsx         # Contact form & info
+│   └── Footer.tsx          # Site footer
+├── globals.css             # Theme, animations & custom styles
+├── layout.tsx              # Root layout with metadata & analytics
+└── page.tsx                # Main page composing all sections
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All rights reserved. &copy; PT. Khodimul Ummah.
